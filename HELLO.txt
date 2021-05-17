@@ -1,6 +1,4 @@
 HELLO
-
-
 git init // 把这个目录变成Git可以管理的仓库
 　　git add README.md // 文件添加到仓库
 　　git add . // 不但可以跟单一文件，还可以跟通配符，更可以跟目录。一个点就把当前目录下所有未追踪的文件全部add了 
@@ -26,5 +24,29 @@ git add .
 git commit -m ‘提交信息’
 git push origin master  修改后的代码改到仓库
 
+更新代码
+第一步：查看当前的git仓库状态，可以使用git status
+
+git status
+
+第二步：更新全部
+
+git add *
+
+第三步：接着输入git commit -m “更新说明”
+
+git commit -m “更新说明”
+
+第四步：先git pull,拉取当前分支最新代码（也就是获取GitHub上的最新代码信息，更新本地代码）
+
+git pull
+
+第五步：push到远程master分支上（修改本地代码后，再更新GitHub上的代码）
+
+git push origin master
+
+不出意外，打开GitHub已经同步了
+
+总之，先pull，再push
 
 https://www.jianshu.com/p/bf95d885978e（GitHub 新手使用手册）
