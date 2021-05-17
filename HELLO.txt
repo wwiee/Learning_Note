@@ -22,6 +22,8 @@ git config --global credential.helper store
 最后再输入一次账号密码就可以保存了
 
 git是不能管理空的文件夹的，文件夹里必须有文件才能add
+git add .
+git commit -m ‘提交信息’
 git push origin master  修改后的代码改到仓库
 
 
